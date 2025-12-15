@@ -39,7 +39,7 @@ const aiCapabilities = [
   "Multi-Tool Integration (GitHub, AWS, Kubernetes, Playwright, Fathom)",
   "AI Readiness Assessment Frameworks for SMBs",
   "Workflow Automation with Low-Code/No-Code Platforms",
-  "Vibe-Coding Rapid Prototyping",
+  "AI-Assisted Rapid Development",
   "QA Testing & Automation Systems",
 ];
 
@@ -99,7 +99,7 @@ export default function AboutPage() {
             </p>
             <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
               With 15+ years of technology leadership experience, I specialize in democratizing AI for business leaders.
-              My focus is on vibe-coding, low-code/no-code solutions, AWS setup, QA testing, and MCP/API integrations
+              My focus is on AI-assisted development, cloud infrastructure, enterprise integrations, and end-to-end automation solutions
               that deliver real business value quickly.
             </p>
             <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">

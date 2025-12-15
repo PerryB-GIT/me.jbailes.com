@@ -52,8 +52,8 @@ const services = [
   {
     title: "Workflow Automation Platforms",
     description:
-      "Low-code/no-code automation solutions using vibe-coding methodology. Rapid prototyping for quick iteration and business value delivery.",
-    tags: ["Automation", "Low-Code", "Vibe-Coding", "Rapid Prototyping"],
+      "Scalable automation solutions using low-code platforms and AI-assisted development. Rapid prototyping for quick iteration and business value delivery.",
+    tags: ["Automation", "Low-Code", "Rapid Development", "Rapid Prototyping"],
   },
   {
     title: "QA Testing & Automation",

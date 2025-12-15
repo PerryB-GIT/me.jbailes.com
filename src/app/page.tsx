@@ -4,7 +4,7 @@ import { ArrowRight, Users, Bot, Workflow, Sparkles, MessageSquare, Zap, Code, B
 
 const skills = [
   { name: "AI Agent Architecture", icon: Bot, items: ["MCP Server Orchestration", "Autonomous Agents", "Multi-Tool Integration", "Claude AI Systems"] },
-  { name: "Rapid Development", icon: Code, items: ["Vibe-Coding", "Low-Code/No-Code", "AWS Infrastructure", "API Integrations"] },
+  { name: "Rapid Development", icon: Code, items: ["AI-Assisted Development", "Low-Code Platforms", "Cloud Infrastructure", "Enterprise Integrations"] },
   { name: "Business Enablement", icon: Users, items: ["AI Readiness Audits", "Workflow Automation", "QA Testing", "Team Leadership"] },
 ];
 
@@ -26,7 +26,7 @@ const services = [
   },
   {
     title: "Workflow Automation Platforms",
-    description: "Building low-code/no-code automation solutions. Vibe-coding as a rapid prototyping methodology for fast business value delivery.",
+    description: "Building scalable automation solutions with low-code platforms. Rapid prototyping and iterative development for accelerated time-to-value.",
     icon: Workflow,
   },
 ];
@@ -36,7 +36,7 @@ const aiAchievements = [
   { title: "Multi-Tool Integration", description: "GitHub, AWS, Kubernetes, Playwright, filesystem, Fathom analytics, and custom APIs" },
   { title: "AI Readiness Frameworks", description: "Developing assessment frameworks to help SMBs evaluate and implement AI solutions" },
   { title: "Low-Code Automation", description: "Creating workflow automation platforms using low-code/no-code methodologies" },
-  { title: "Vibe-Coding Prototyping", description: "Rapid prototyping methodology for quick iteration and business value delivery" },
+  { title: "Rapid Prototyping", description: "Accelerated development cycles with iterative testing for quick business value delivery" },
   { title: "QA & Testing Systems", description: "Implementing comprehensive QA testing frameworks with AI-assisted automation" },
 ];
 
@@ -99,7 +99,7 @@ export default function Home() {
                 MCP server orchestration, and workflow automation platforms—without requiring deep technical expertise.
               </p>
               <p className="text-base leading-7 text-slate-500 dark:text-slate-400">
-                Specializing in vibe-coding, low-code/no-code solutions, AWS setup, QA testing, and MCP/API integrations.
+                Specializing in AI-assisted development, cloud infrastructure, enterprise system integrations, and end-to-end automation solutions.
                 Based in Boston, MA. Available for consulting engagements.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">

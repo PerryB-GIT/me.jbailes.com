@@ -19,7 +19,7 @@ const experience = [
       "Designing autonomous agent systems with multi-tool integration (GitHub, AWS, Kubernetes, Playwright)",
       "Conducting AI readiness audits to optimize business operations",
       "Developing low-code/no-code automation solutions for rapid deployment",
-      "Vibe-coding rapid prototyping for quick iteration and business value delivery",
+      "Rapid prototyping and iterative development for accelerated time-to-value",
     ],
   },
   {
@@ -62,7 +62,7 @@ const experience = [
 
 const skills = {
   aiAgent: ["MCP Server Orchestration", "Autonomous Agents", "Claude AI Systems", "Multi-Tool Integration", "AI Readiness Frameworks"],
-  development: ["Vibe-Coding", "Low-Code/No-Code", "AWS Infrastructure", "API Integrations", "QA Testing"],
+  development: ["AI-Assisted Development", "Low-Code/No-Code", "AWS Infrastructure", "API Integrations", "QA Testing"],
   leadership: ["Team Management", "Mentoring", "Strategic Planning", "Change Management", "Performance Optimization"],
   business: ["AI Consultation", "Workflow Automation", "Budget Management", "Vendor Relations", "Cross-functional Collaboration"],
 };
@@ -136,7 +136,7 @@ export default function ResumePage() {
             AI consultant and technology leader actively building AI-enabled infrastructure that empowers businesses
             to leverage autonomous agent systems, MCP server orchestration, and workflow automation platforms.
             15+ years of experience in IT leadership, specializing in democratizing AI for business leaders through
-            vibe-coding, low-code/no-code solutions, AWS setup, QA testing, and MCP/API integrations.
+            AI-assisted development, cloud infrastructure, enterprise integrations, and end-to-end automation solutions.
           </p>
         </section>
 

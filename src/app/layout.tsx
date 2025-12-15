@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Perry Bailes",
   },
   description: "Technology leader and AI consultant specializing in LLM implementation, AI agents, MCP integration, custom workflows, and digital transformation.",
-  keywords: ["AI consultant", "LLM", "AI agents", "MCP", "automation", "vibe coding", "technology leader", "digital transformation", "custom workflows"],
+  keywords: ["AI consultant", "LLM", "AI agents", "MCP", "automation", "AI development", "technology leader", "digital transformation", "custom workflows"],
   authors: [{ name: "Perry Bailes" }],
   openGraph: {
     type: "website",
