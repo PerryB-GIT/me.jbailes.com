@@ -132,7 +132,7 @@ export default function Home() {
           <p className="mb-8 text-center text-sm font-medium text-slate-500 dark:text-slate-400">Companies & Projects</p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
             {companies.map((company) => (
-              <Link key={company.name} href={company.url} target="_blank" rel="noopener noreferrer" className="grayscale transition-all hover:grayscale-0">
+              <Link key={company.name} href={company.url} target="_blank" rel="noopener noreferrer" className="transition-all hover:opacity-80">
                 <Image src={company.logo} alt={company.name} width={120} height={40} className="h-10 w-auto object-contain" />
               </Link>
             ))}
