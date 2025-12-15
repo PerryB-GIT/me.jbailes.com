@@ -42,6 +42,7 @@ const aiAchievements = [
 
 const companies = [
   { name: "SupportForge", logo: "/supportforge.png", url: "https://support-forge.com" },
+  { name: "WollenLabs", logo: "/wollenlabs.svg", url: "https://wollenlabs.com" },
   { name: "TheVets", logo: "/thevets.png", url: "https://thevets.com" },
   { name: "BetterVet", logo: "/betterVet.png", url: "https://bettervet.com" },
   { name: "Constant Contact", logo: "/cc.png", url: "https://constantcontact.com" },
