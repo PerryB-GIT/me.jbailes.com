@@ -114,7 +114,7 @@ export default function Home() {
             </div>
             <div className="hidden lg:block">
               <Image
-                src="/selfie2.png"
+                src="/selfie.jpg"
                 alt="Perry Bailes"
                 width={300}
                 height={300}
