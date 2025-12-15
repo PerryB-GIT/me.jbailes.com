@@ -69,13 +69,6 @@ const skills = {
 
 const education = [
   {
-    degree: "BBA in Business and Information Systems",
-    school: "University",
-    location: "",
-    year: "2002",
-    highlights: ["Business Administration", "Information Systems"],
-  },
-  {
     degree: "BA in History and Asian Studies",
     school: "Georgia Southern University",
     location: "Statesboro, GA",

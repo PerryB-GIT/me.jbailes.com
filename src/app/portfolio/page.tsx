@@ -19,15 +19,6 @@ const projects = [
     featured: true,
   },
   {
-    title: "WollenLabs",
-    description:
-      "AI consulting and technology solutions company. Building innovative AI-enabled infrastructure and workflow automation platforms for businesses.",
-    tags: ["AI Consulting", "Technology Solutions", "Innovation"],
-    demo: "https://wollenlabs.com",
-    logo: "/wollenlabs.svg",
-    featured: true,
-  },
-  {
     title: "Sweet Meadow Bakery",
     description:
       "Modern e-commerce website for a local bakery. Features online ordering, menu management, and customer engagement tools built with Next.js.",
