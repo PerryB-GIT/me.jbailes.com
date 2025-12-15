@@ -1,25 +1,27 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Projects and work by Perry Bailes - AI consulting and web development.",
+  description: "Projects and work by Perry Bailes - AI consulting, agent development, and workflow automation.",
 };
 
 const projects = [
   {
     title: "Support Forge",
     description:
-      "AI-powered support automation platform. Streamlines customer service workflows with intelligent routing, automated responses, and analytics dashboards.",
-    tags: ["AI", "Automation", "Customer Support", "Analytics"],
+      "AI-powered support automation platform built with MCP protocol orchestration. Features intelligent routing, automated responses powered by Claude AI, and analytics dashboards for support teams.",
+    tags: ["AI Agents", "MCP", "Automation", "Customer Support"],
     demo: "https://support-forge.com",
+    logo: "/supportforge.png",
     featured: true,
   },
   {
     title: "Sweet Meadow Bakery",
     description:
-      "Modern e-commerce website for a local bakery. Features online ordering, menu management, and customer engagement tools.",
+      "Modern e-commerce website for a local bakery. Features online ordering, menu management, and customer engagement tools built with Next.js.",
     tags: ["Next.js", "E-commerce", "Web Design", "Local Business"],
     demo: "https://sweetmeadow-bakery.com",
     featured: true,
@@ -27,31 +29,37 @@ const projects = [
   {
     title: "me.jbailes.com",
     description:
-      "Personal portfolio and professional website. Built with Next.js, Tailwind CSS, and deployed on AWS. Features dark mode, responsive design, and contact form integration.",
+      "Personal portfolio and professional website. Built with Next.js 14, Tailwind CSS, and deployed on AWS Amplify. Features dark mode, responsive design, and contact form integration.",
     tags: ["Next.js", "Tailwind CSS", "AWS", "Portfolio"],
     demo: "https://me.jbailes.com",
     featured: true,
   },
+];
+
+const services = [
   {
-    title: "AI Agent Implementations",
+    title: "AI Agent Systems Design",
     description:
-      "Custom AI agents built for various clients to automate workflows, handle customer interactions, and streamline operations using LLMs and MCP servers.",
-    tags: ["AI Agents", "LLM", "MCP", "Automation"],
-    featured: false,
+      "Building autonomous agent systems with MCP protocol orchestration. Multi-tool integration with GitHub, AWS, Kubernetes, Playwright, and more.",
+    tags: ["AI Agents", "MCP", "Claude AI", "Multi-Tool Integration"],
   },
   {
-    title: "CRM & Salesforce Integrations",
+    title: "AI Readiness Assessments",
     description:
-      "Enterprise CRM implementations and Salesforce customizations for improved sales tracking, customer analytics, and team performance dashboards.",
-    tags: ["Salesforce", "CRM", "Analytics", "Enterprise"],
-    featured: false,
+      "Comprehensive AI readiness frameworks for SMBs. Evaluating current systems, identifying opportunities, and creating implementation roadmaps.",
+    tags: ["AI Consultation", "Business Analysis", "Strategy"],
   },
   {
-    title: "Custom Workflow Automation",
+    title: "Workflow Automation Platforms",
     description:
-      "Automated business processes and workflows for clients, connecting various tools and eliminating repetitive manual tasks through intelligent automation.",
-    tags: ["Automation", "Workflows", "Integration", "Efficiency"],
-    featured: false,
+      "Low-code/no-code automation solutions using vibe-coding methodology. Rapid prototyping for quick iteration and business value delivery.",
+    tags: ["Automation", "Low-Code", "Vibe-Coding", "Rapid Prototyping"],
+  },
+  {
+    title: "QA Testing & Automation",
+    description:
+      "Implementing comprehensive QA testing frameworks with AI-assisted automation. Ensuring quality across development lifecycles.",
+    tags: ["QA Testing", "Automation", "AI-Assisted", "Quality Assurance"],
   },
 ];
 
@@ -65,7 +73,7 @@ export default function PortfolioPage() {
             Portfolio
           </h1>
           <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
-            A selection of projects showcasing AI solutions, web development, and automation work.
+            AI agent development, workflow automation, and web projects showcasing hands-on implementation.
           </p>
         </div>
 
@@ -78,7 +86,16 @@ export default function PortfolioPage() {
                 key={project.title}
                 className="group rounded-xl border border-slate-200 bg-white p-6 transition-all hover:border-emerald-300 hover:shadow-lg dark:border-slate-700 dark:bg-slate-800 dark:hover:border-emerald-700"
               >
-                <div className="mb-4">
+                <div className="mb-4 flex items-center gap-3">
+                  {project.logo && (
+                    <Image
+                      src={project.logo}
+                      alt={project.title}
+                      width={40}
+                      height={40}
+                      className="rounded-lg"
+                    />
+                  )}
                   <h3 className="text-xl font-semibold text-slate-900 group-hover:text-emerald-600 dark:text-white dark:group-hover:text-emerald-400">
                     {project.title}
                   </h3>
@@ -112,21 +129,21 @@ export default function PortfolioPage() {
           </div>
         </div>
 
-        {/* Other Projects */}
-        <div>
-          <h2 className="mb-8 text-2xl font-bold text-slate-900 dark:text-white">Other Work</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {projects.filter(p => !p.featured).map((project) => (
+        {/* Services */}
+        <div className="mb-16">
+          <h2 className="mb-8 text-2xl font-bold text-slate-900 dark:text-white">Consulting Services</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {services.map((service) => (
               <div
-                key={project.title}
+                key={service.title}
                 className="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-800"
               >
                 <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-                  {project.title}
+                  {service.title}
                 </h3>
-                <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{project.description}</p>
+                <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{service.description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
+                  {service.tags.map((tag) => (
                     <span
                       key={tag}
                       className="rounded-md bg-slate-100 px-2 py-1 text-xs text-slate-600 dark:bg-slate-700 dark:text-slate-300"
@@ -143,10 +160,10 @@ export default function PortfolioPage() {
         {/* CTA */}
         <div className="mt-16 rounded-xl bg-slate-50 p-8 text-center dark:bg-slate-800">
           <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-            Interested in working together?
+            Ready to Build Your AI Infrastructure?
           </h3>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
-            Let&apos;s discuss how I can help with your next project.
+            Let&apos;s discuss how autonomous agents, MCP orchestration, and workflow automation can transform your business.
           </p>
           <Link
             href="/contact"

@@ -1,13 +1,19 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { MapPin, Calendar, GraduationCap, Briefcase } from "lucide-react";
+import { MapPin, Calendar, GraduationCap, Briefcase, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn more about Perry Bailes - Technology Leader, AI Consultant, and IT Director.",
+  description: "Learn more about Perry Bailes - AI Consultant, Technology Leader, and IT Director.",
 };
 
 const experience = [
+  {
+    title: "AI Consultant & Founder",
+    company: "SupportForge",
+    period: "2025 - Present",
+    description: "Building AI-enabled infrastructure for businesses. End-to-end technology advisement, AI agent systems design with MCP protocol orchestration, AI readiness audits, and low-code/no-code workflow automation.",
+  },
   {
     title: "Director of IT and Technical Operations",
     company: "TheVets",
@@ -21,17 +27,20 @@ const experience = [
     description: "Expanded operations across 27 US cities. Oversaw CRM and AI initiatives, recruited and trained technical staff.",
   },
   {
-    title: "Manager, Account Review and Coaching",
-    company: "Constant Contact",
-    period: "2014 - 2017",
-    description: "Developed high-performing email marketing teams. Built Salesforce dashboards and analytics, enhanced customer education.",
-  },
-  {
     title: "Manager, Technical Support",
     company: "LogMeIn",
     period: "2006 - 2014",
     description: "Directed 24x7 global support operations. Improved satisfaction metrics and generated $2.5M in support-to-sales conversions.",
   },
+];
+
+const aiCapabilities = [
+  "MCP Server Orchestration with Claude",
+  "Multi-Tool Integration (GitHub, AWS, Kubernetes, Playwright, Fathom)",
+  "AI Readiness Assessment Frameworks for SMBs",
+  "Workflow Automation with Low-Code/No-Code Platforms",
+  "Vibe-Coding Rapid Prototyping",
+  "QA Testing & Automation Systems",
 ];
 
 const education = [
@@ -65,7 +74,7 @@ export default function AboutPage() {
               About Me
             </h1>
             <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
-              Technology leader and AI consultant with a passion for delivering exceptional results.
+              AI Consultant & Technology Leader actively building AI-enabled infrastructure.
             </p>
             <div className="mt-4 flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
               <div className="flex items-center gap-2">
@@ -84,20 +93,41 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              I&apos;m Perry Bailes, a technology leader and AI consultant based in Boston, MA and the North Shore area.
-              With over 15 years of experience in IT leadership, I specialize in building high-performing
-              teams, implementing innovative AI solutions, and driving digital transformation.
+              I&apos;m Perry Bailes, an AI consultant and technology leader based in Boston, MA and the North Shore area.
+              I&apos;m actively building AI-enabled infrastructure that empowers businesses to leverage autonomous agent systems,
+              MCP server orchestration, and workflow automation platforms—without requiring deep technical expertise.
             </p>
             <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              My goals are to continue to grow my industry knowledge and leadership skills. To sow the
-              seeds of innovation, to nurture new attitudes. I believe in developing strong relationships
-              and building effective teams that deliver exceptional results.
+              With 15+ years of technology leadership experience, I specialize in democratizing AI for business leaders.
+              My focus is on vibe-coding, low-code/no-code solutions, AWS setup, QA testing, and MCP/API integrations
+              that deliver real business value quickly.
             </p>
             <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              Today, I combine my technology leadership experience with expertise in AI agents, LLM implementation,
-              MCP integration, and custom workflow automation to help businesses transform their operations.
+              I combine hands-on AI agent development with strategic technology advisement, helping SMBs evaluate
+              and implement AI solutions through comprehensive readiness assessments and custom automation frameworks.
               I balance being a student with serving as a teacher and mentor to those around me.
             </p>
+          </div>
+        </section>
+
+        {/* AI Capabilities Section */}
+        <section className="mb-16">
+          <div className="mb-8 flex items-center gap-3">
+            <Zap className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">AI Agent Architecture & Business Enablement</h2>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {aiCapabilities.map((capability, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 rounded-lg border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800"
+              >
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900">
+                  <Zap className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+                </div>
+                <span className="text-slate-700 dark:text-slate-300">{capability}</span>
+              </div>
+            ))}
           </div>
         </section>
 

@@ -4,10 +4,24 @@ import { Download, Mail, MapPin, Globe, Linkedin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Resume",
-  description: "Perry Bailes - Director of IT and Technical Operations Resume",
+  description: "Perry Bailes - AI Consultant & Technology Leader Resume",
 };
 
 const experience = [
+  {
+    title: "AI Consultant & Founder",
+    company: "SupportForge",
+    location: "Remote",
+    period: "2025 - Present",
+    responsibilities: [
+      "Building AI-enabled infrastructure for businesses using MCP protocol orchestration",
+      "End-to-end technology advisement and AI integration strategy consulting",
+      "Designing autonomous agent systems with multi-tool integration (GitHub, AWS, Kubernetes, Playwright)",
+      "Conducting AI readiness audits to optimize business operations",
+      "Developing low-code/no-code automation solutions for rapid deployment",
+      "Vibe-coding rapid prototyping for quick iteration and business value delivery",
+    ],
+  },
   {
     title: "Director of IT and Technical Operations",
     company: "TheVets",
@@ -33,18 +47,6 @@ const experience = [
     ],
   },
   {
-    title: "Manager, Account Review and Coaching",
-    company: "Constant Contact",
-    location: "Waltham, MA",
-    period: "2014 - 2017",
-    responsibilities: [
-      "Developed high-performing email marketing teams",
-      "Built Salesforce dashboards and analytics for performance tracking",
-      "Enhanced customer education programs improving retention",
-      "Implemented coaching frameworks for team development",
-    ],
-  },
-  {
     title: "Manager, Technical Support",
     company: "LogMeIn",
     location: "Woburn, MA",
@@ -59,10 +61,10 @@ const experience = [
 ];
 
 const skills = {
+  aiAgent: ["MCP Server Orchestration", "Autonomous Agents", "Claude AI Systems", "Multi-Tool Integration", "AI Readiness Frameworks"],
+  development: ["Vibe-Coding", "Low-Code/No-Code", "AWS Infrastructure", "API Integrations", "QA Testing"],
   leadership: ["Team Management", "Mentoring", "Strategic Planning", "Change Management", "Performance Optimization"],
-  technical: ["CRM Implementation", "System Administration", "Cloud Infrastructure", "DevOps", "IT Operations"],
-  innovation: ["AI Solutions", "Process Automation", "Data Analytics", "Digital Transformation"],
-  business: ["Budget Management", "Vendor Relations", "Project Management", "Cross-functional Collaboration"],
+  business: ["AI Consultation", "Workflow Automation", "Budget Management", "Vendor Relations", "Cross-functional Collaboration"],
 };
 
 const education = [
@@ -93,7 +95,7 @@ export default function ResumePage() {
               Perry Bailes
             </h1>
             <p className="mt-2 text-xl text-emerald-600 dark:text-emerald-400">
-              Director of IT and Technical Operations
+              AI Consultant & Technology Leader
             </p>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-600 dark:text-slate-400">
               <div className="flex items-center gap-1">
@@ -138,10 +140,10 @@ export default function ResumePage() {
         <section className="mb-12">
           <h2 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Summary</h2>
           <p className="text-slate-600 dark:text-slate-300">
-            Experienced technology leader with 15+ years of experience building and leading high-performing teams.
-            Proven track record in IT operations, CRM implementation, AI solutions, and driving digital transformation.
-            Passionate about creating cultures of accountability, mentoring teams, and delivering exceptional results
-            through innovative technology solutions.
+            AI consultant and technology leader actively building AI-enabled infrastructure that empowers businesses
+            to leverage autonomous agent systems, MCP server orchestration, and workflow automation platforms.
+            15+ years of experience in IT leadership, specializing in democratizing AI for business leaders through
+            vibe-coding, low-code/no-code solutions, AWS setup, QA testing, and MCP/API integrations.
           </p>
         </section>
 
@@ -178,7 +180,7 @@ export default function ResumePage() {
             {Object.entries(skills).map(([category, items]) => (
               <div key={category}>
                 <h3 className="mb-2 text-sm font-medium capitalize text-slate-700 dark:text-slate-300">
-                  {category}
+                  {category === "aiAgent" ? "AI Agent Architecture" : category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {items.map((skill) => (
