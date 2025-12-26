@@ -1,8 +1,10 @@
 import Link from "next/link";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Github, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { name: "LinkedIn", href: "https://linkedin.com/in/perrybailes", icon: Linkedin },
+  { name: "GitHub", href: "https://github.com/PerryB-GIT", icon: Github },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/perrybailes/", icon: Linkedin },
+  { name: "Twitter", href: "https://x.com/502ec709e531469", icon: Twitter },
   { name: "Email", href: "mailto:perry.bailes@gmail.com", icon: Mail },
 ];
 

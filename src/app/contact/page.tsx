@@ -6,9 +6,9 @@ import { Send, Mail, MapPin, Linkedin, Github, Twitter, Loader2 } from "lucide-r
 
 const socialLinks = [
   { name: "Email", href: "mailto:perry.bailes@gmail.com", icon: Mail },
-  { name: "LinkedIn", href: "https://linkedin.com/in/jbailes", icon: Linkedin },
-  { name: "GitHub", href: "https://github.com/jbailes", icon: Github },
-  { name: "Twitter", href: "https://twitter.com/jbailes", icon: Twitter },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/perrybailes/", icon: Linkedin },
+  { name: "GitHub", href: "https://github.com/PerryB-GIT", icon: Github },
+  { name: "Twitter", href: "https://x.com/502ec709e531469", icon: Twitter },
 ];
 
 export default function ContactPage() {
