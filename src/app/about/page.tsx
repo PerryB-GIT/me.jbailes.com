@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { MapPin, Calendar, GraduationCap, Briefcase, Zap } from "lucide-react";
+import { MapPin, Calendar, GraduationCap, Briefcase, Zap, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About",
@@ -53,6 +53,63 @@ const education = [
     degree: "BA in History and Asian Studies",
     school: "Georgia Southern University",
     year: "1996",
+  },
+];
+
+const certifications = [
+  {
+    name: "Design Prompts for Everyday Work Tasks",
+    issuer: "Google",
+    date: "Dec 2025",
+    credentialId: "FNUULEVE1870",
+  },
+  {
+    name: "Discover the Art of Prompting",
+    issuer: "Google",
+    date: "Dec 2025",
+    credentialId: "KEI6NAJEEVOQ",
+  },
+  {
+    name: "Introduction to Large Language Models",
+    issuer: "Google Cloud",
+    date: "Dec 2025",
+    credentialId: "FTYOSKAZWYUF",
+  },
+  {
+    name: "Introduction to Responsible AI",
+    issuer: "Google Cloud",
+    date: "Dec 2025",
+    credentialId: "1B5KMUW7UI91",
+  },
+  {
+    name: "Maximize Productivity With AI Tools",
+    issuer: "Google",
+    date: "Dec 2025",
+    credentialId: "NIRZWYH338TP",
+  },
+  {
+    name: "Responsible AI: Applying AI Principles with Google Cloud",
+    issuer: "Google Cloud",
+    date: "Dec 2025",
+    credentialId: "DZYAYWG6W5QH",
+  },
+  {
+    name: "Speed Up Data Analysis and Presentation Building",
+    issuer: "Google",
+    date: "Dec 2025",
+    credentialId: "CVYBRNOPCFEB",
+  },
+  {
+    name: "Start Writing Prompts like a Pro",
+    issuer: "Google",
+    date: "Dec 2025",
+    credentialId: "QUXR6YQIS75R",
+  },
+  {
+    name: "Use AI Responsibly",
+    issuer: "Google",
+    date: "Dec 2025",
+    credentialId: "NIRZWYH338TP",
   },
 ];
 
@@ -154,7 +211,7 @@ export default function AboutPage() {
         </section>
 
         {/* Education Section */}
-        <section>
+        <section className="mb-16">
           <div className="mb-8 flex items-center gap-3">
             <GraduationCap className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Education</h2>
@@ -168,6 +225,33 @@ export default function AboutPage() {
                 <h3 className="font-semibold text-slate-900 dark:text-white">{edu.degree}</h3>
                 <p className="text-emerald-600 dark:text-emerald-400">{edu.school}</p>
                 <p className="text-sm text-slate-500 dark:text-slate-400">{edu.year}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Certifications Section */}
+        <section>
+          <div className="mb-8 flex items-center gap-3">
+            <Award className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Certifications</h2>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {certifications.map((cert, index) => (
+              <div
+                key={index}
+                className="rounded-lg border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800"
+              >
+                <div className="flex items-start gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900">
+                    <Award className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="font-semibold leading-tight text-slate-900 dark:text-white">{cert.name}</h3>
+                    <p className="mt-1 text-sm text-emerald-600 dark:text-emerald-400">{cert.issuer}</p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">{cert.date}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
