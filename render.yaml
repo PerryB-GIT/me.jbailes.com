@@ -1,0 +1,19 @@
+# Render.com Blueprint for jpbailes.com DR Backup
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: jpbailes
+    runtime: node
+    region: ohio  # US East, close to original AWS us-east-1
+    plan: free
+    branch: master
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+    healthCheckPath: /
+    autoDeploy: true
