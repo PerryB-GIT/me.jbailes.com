@@ -69,11 +69,11 @@ const skills = {
 
 const education = [
   {
-    degree: "BA in History and Asian Studies",
+    degree: "BBA in Business and Information Systems",
     school: "Georgia Southern University",
     location: "Statesboro, GA",
-    year: "1996",
-    highlights: ["History Major", "Asian Studies"],
+    year: "2002",
+    highlights: ["Business Administration", "Information Systems"],
   },
 ];
 

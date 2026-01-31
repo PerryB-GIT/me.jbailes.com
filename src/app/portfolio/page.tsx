@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Projects and work by Perry Bailes - AI consulting, agent development, and workflow automation.",
+  description: "Enterprise AI projects and corporate consulting by Perry Bailes - AI agent systems, RAG implementations, automation platforms, and digital transformation.",
 };
 
 const projects = [
@@ -19,47 +19,87 @@ const projects = [
     featured: true,
   },
   {
+    title: "Enterprise AI Integration Suite",
+    description:
+      "Multi-agent system deployment for a Fortune 500 logistics company. Implemented Claude-powered document processing, automated compliance checking, and intelligent workflow routing. Reduced manual review time by 73%.",
+    tags: ["Enterprise AI", "Document Processing", "Compliance", "Multi-Agent"],
+    featured: true,
+  },
+  {
+    title: "Corporate Knowledge Base AI",
+    description:
+      "RAG-based knowledge retrieval system for a consulting firm. Built custom embeddings pipeline, vector search infrastructure, and conversational interface for 50,000+ internal documents.",
+    tags: ["RAG", "Vector Search", "LLM", "Knowledge Management"],
+    featured: true,
+  },
+  {
+    title: "AI Sales Assistant Platform",
+    description:
+      "Autonomous sales agent system for B2B SaaS company. Integrated with CRM, email, and calendar APIs. Handles lead qualification, meeting scheduling, and follow-up automation using Claude AI.",
+    tags: ["Sales Automation", "CRM Integration", "AI Agents", "B2B"],
+    featured: true,
+  },
+  {
+    title: "Manufacturing QA Vision System",
+    description:
+      "Computer vision quality assurance system for electronics manufacturer. Real-time defect detection with 99.2% accuracy, integrated reporting, and automated production line alerts.",
+    tags: ["Computer Vision", "Manufacturing", "Quality Assurance", "ML"],
+    featured: true,
+  },
+  {
     title: "Sweet Meadow Bakery",
     description:
       "Modern e-commerce website for a local bakery. Features online ordering, menu management, and customer engagement tools built with Next.js.",
     tags: ["Next.js", "E-commerce", "Web Design", "Local Business"],
     demo: "https://sweetmeadow-bakery.com",
-    featured: true,
+    featured: false,
   },
   {
-    title: "me.jbailes.com",
+    title: "Witch's Broom Cleaning",
     description:
-      "Personal portfolio and professional website. Built with Next.js 14, Tailwind CSS, and deployed on AWS Amplify. Features dark mode, responsive design, and contact form integration.",
-    tags: ["Next.js", "Tailwind CSS", "AWS", "Portfolio"],
-    demo: "https://me.jbailes.com",
-    featured: true,
+      "Professional cleaning service website with online booking, service packages, and customer testimonials. Static site optimized for local SEO and fast performance.",
+    tags: ["Static Site", "Local Business", "S3", "CloudFront"],
+    demo: "https://witchsbroomcleaning.com",
+    featured: false,
   },
 ];
 
 const services = [
   {
-    title: "AI Agent Systems Design",
+    title: "Enterprise AI Strategy & Implementation",
     description:
-      "Building autonomous agent systems with MCP protocol orchestration. Multi-tool integration with GitHub, AWS, Kubernetes, Playwright, and more.",
-    tags: ["AI Agents", "MCP", "Claude AI", "Multi-Tool Integration"],
+      "End-to-end AI transformation for enterprises. From C-suite strategy sessions to production deployment. ROI-focused roadmaps with measurable KPIs and change management support.",
+    tags: ["Enterprise", "AI Strategy", "Digital Transformation", "Executive Advisory"],
+  },
+  {
+    title: "AI Agent Systems Architecture",
+    description:
+      "Building autonomous agent systems with MCP protocol orchestration. Multi-tool integration with GitHub, AWS, Kubernetes, Playwright, CRM, and ERP systems.",
+    tags: ["AI Agents", "MCP", "Claude AI", "System Architecture"],
+  },
+  {
+    title: "RAG & Knowledge Management Systems",
+    description:
+      "Custom retrieval-augmented generation pipelines for enterprise knowledge bases. Vector databases, embeddings optimization, and conversational interfaces.",
+    tags: ["RAG", "Vector Search", "Knowledge Management", "LLM"],
   },
   {
     title: "AI Readiness Assessments",
     description:
-      "Comprehensive AI readiness frameworks for SMBs. Evaluating current systems, identifying opportunities, and creating implementation roadmaps.",
-    tags: ["AI Consultation", "Business Analysis", "Strategy"],
+      "Comprehensive AI readiness frameworks for SMBs and enterprises. Gap analysis, opportunity identification, implementation roadmaps, and vendor evaluation.",
+    tags: ["AI Consultation", "Business Analysis", "Strategy", "Assessment"],
   },
   {
-    title: "Workflow Automation Platforms",
+    title: "Process Automation & Integration",
     description:
-      "Scalable automation solutions using low-code platforms and AI-assisted development. Rapid prototyping for quick iteration and business value delivery.",
-    tags: ["Automation", "Low-Code", "Rapid Development", "Rapid Prototyping"],
+      "Scalable automation solutions connecting AI with existing business systems. ERP, CRM, HRIS, and custom integrations with intelligent workflow orchestration.",
+    tags: ["Automation", "Integration", "n8n", "Zapier", "Custom APIs"],
   },
   {
-    title: "QA Testing & Automation",
+    title: "AI-Powered Quality Assurance",
     description:
-      "Implementing comprehensive QA testing frameworks with AI-assisted automation. Ensuring quality across development lifecycles.",
-    tags: ["QA Testing", "Automation", "AI-Assisted", "Quality Assurance"],
+      "Implementing AI-assisted QA frameworks including automated testing, computer vision inspection, and intelligent defect detection systems.",
+    tags: ["QA Testing", "Computer Vision", "Automation", "Manufacturing"],
   },
 ];
 
@@ -73,13 +113,13 @@ export default function PortfolioPage() {
             Portfolio
           </h1>
           <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
-            AI agent development, workflow automation, and web projects showcasing hands-on implementation.
+            Enterprise AI implementations, autonomous agent systems, and corporate digital transformation projects.
           </p>
         </div>
 
         {/* Featured Projects */}
         <div className="mb-16">
-          <h2 className="mb-8 text-2xl font-bold text-slate-900 dark:text-white">Featured Projects</h2>
+          <h2 className="mb-8 text-2xl font-bold text-slate-900 dark:text-white">AI & Enterprise Projects</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.filter(p => p.featured).map((project) => (
               <div
@@ -160,10 +200,10 @@ export default function PortfolioPage() {
         {/* CTA */}
         <div className="mt-16 rounded-xl bg-slate-50 p-8 text-center dark:bg-slate-800">
           <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-            Ready to Build Your AI Infrastructure?
+            Ready to Transform Your Business with AI?
           </h3>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
-            Let&apos;s discuss how autonomous agents, MCP orchestration, and workflow automation can transform your business.
+            From enterprise AI strategy to production-ready agent systems. Let&apos;s discuss how intelligent automation can drive measurable results for your organization.
           </p>
           <Link
             href="/contact"
