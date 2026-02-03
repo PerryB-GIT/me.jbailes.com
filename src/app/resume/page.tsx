@@ -96,11 +96,11 @@ export default function ResumePage() {
                 <span>Boston, MA / North Shore</span>
               </div>
               <Link
-                href="mailto:perry.bailes@gmail.com"
+                href="mailto:{YOUR_EMAIL}"
                 className="flex items-center gap-1 hover:text-emerald-600 dark:hover:text-emerald-400"
               >
                 <Mail className="h-4 w-4" />
-                <span>perry.bailes@gmail.com</span>
+                <span>{YOUR_EMAIL}</span>
               </Link>
               <Link
                 href="https://me.jbailes.com"
@@ -112,7 +112,7 @@ export default function ResumePage() {
             </div>
             <div className="mt-2 flex gap-4">
               <Link
-                href="https://linkedin.com/in/perrybailes"
+                href="https://linkedin.com/in/{YOUR_HANDLE}"
                 target="_blank"
                 className="text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
               >

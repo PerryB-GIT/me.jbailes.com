@@ -4,7 +4,7 @@ import { MapPin, Calendar, GraduationCap, Briefcase, Zap, Award } from "lucide-r
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn more about Perry Bailes - AI Consultant, Technology Leader, and IT Director.",
+  description: "Learn more about {YOUR_NAME} - AI Consultant, Technology Leader, and IT Director.",
 };
 
 const experience = [
@@ -121,7 +121,7 @@ export default function AboutPage() {
         <div className="mb-12 flex flex-col gap-8 md:flex-row md:items-start">
           <Image
             src="/selfie2.png"
-            alt="Perry Bailes"
+            alt="{YOUR_NAME}"
             width={200}
             height={200}
             className="rounded-2xl shadow-lg"
@@ -150,7 +150,7 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="prose prose-slate max-w-none dark:prose-invert">
             <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-              I&apos;m Perry Bailes, an AI consultant and technology leader based in Boston, MA and the North Shore area.
+              I&apos;m {YOUR_NAME}, an AI consultant and technology leader based in Boston, MA and the North Shore area.
               I&apos;m actively building AI-enabled infrastructure that empowers businesses to leverage autonomous agent systems,
               MCP server orchestration, and workflow automation platforms—without requiring deep technical expertise.
             </p>

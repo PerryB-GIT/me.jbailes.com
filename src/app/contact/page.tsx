@@ -5,8 +5,8 @@ import { Metadata } from "next";
 import { Send, Mail, MapPin, Linkedin, Github, Twitter, Loader2 } from "lucide-react";
 
 const socialLinks = [
-  { name: "Email", href: "mailto:perry.bailes@gmail.com", icon: Mail },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/perrybailes/", icon: Linkedin },
+  { name: "Email", href: "mailto:{YOUR_EMAIL}", icon: Mail },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/{YOUR_HANDLE}/", icon: Linkedin },
   { name: "GitHub", href: "https://github.com/PerryB-GIT", icon: Github },
   { name: "Twitter", href: "https://x.com/502ec709e531469", icon: Twitter },
 ];
@@ -194,10 +194,10 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm text-slate-500 dark:text-slate-400">Email</p>
                     <a
-                      href="mailto:perry.bailes@gmail.com"
+                      href="mailto:{YOUR_EMAIL}"
                       className="text-slate-900 hover:text-emerald-600 dark:text-white dark:hover:text-emerald-400"
                     >
-                      perry.bailes@gmail.com
+                      {YOUR_EMAIL}
                     </a>
                   </div>
                 </div>

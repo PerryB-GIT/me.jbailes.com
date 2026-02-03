@@ -93,7 +93,7 @@ curl -I https://jpbailes.com
 - **GCP Status**: https://status.cloud.google.com/
 - **Render Status**: https://status.render.com/
 - **GoDaddy Support**: 480-505-8877
-- **Owner**: Perry (perry.bailes@gmail.com)
+- **Owner**: Perry ({YOUR_EMAIL})
 
 ---
 
@@ -119,7 +119,7 @@ gcloud run deploy jpbailes \
 
 ### Contact Form During Failover
 - Contact form uses AWS SES which may be unavailable
-- Workaround: Users can email perry.bailes@gmail.com directly
+- Workaround: Users can email {YOUR_EMAIL} directly
 - TODO: Implement SendGrid fallback
 
 ### SSL Certificate

@@ -1,7 +1,7 @@
 # jpbailes.com - Personal Portfolio Site
 
 ## Project Overview
-Perry's personal portfolio and resume website.
+{Owner's personal} portfolio and resume website.
 
 **Tech Stack**: Next.js 16, TypeScript, Tailwind CSS v4, React 19
 

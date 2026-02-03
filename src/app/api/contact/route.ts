@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const toEmail = process.env.CONTACT_EMAIL || "perry.bailes@gmail.com";
+    const toEmail = process.env.CONTACT_EMAIL || "{YOUR_EMAIL}";
 
     const params = {
       Source: toEmail, // Must be verified in SES
